@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+def display_quotes(quotes, count):
+    if count >= len(quotes):
+        print("All Quotes:")
+        view_quotes(quotes)
+    else:
+        print(f"First {count} Quotes:")
+        for i in range(count):
+            print_quote(quotes[i])
+=======
 import random
 
 def load_quotes(filename):
@@ -20,3 +30,4 @@ def print_quote(quote):
 def view_quotes(quotes):
     for quote in quotes:
         print_quote(quote)
+>>>>>>> a5dd0637eea76c80a14b8cbf7572a2f2382d2f35
