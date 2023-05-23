@@ -1,4 +1,13 @@
-<<<<<<< HEAD
+import random
+
+def add_quote(quotes, filename):
+    new_quote = input("Enter a new quote: ")
+    quotes.append(new_quote)
+    
+    with open(filename, 'a') as file:
+        file.write(new_quote)
+
+
 def display_quotes(quotes, count):
     if count >= len(quotes):
         print("All Quotes:")
@@ -7,8 +16,8 @@ def display_quotes(quotes, count):
         print(f"First {count} Quotes:")
         for i in range(count):
             print_quote(quotes[i])
-=======
-import random
+
+
 
 def load_quotes(filename):
     quotes = []
@@ -30,4 +39,4 @@ def print_quote(quote):
 def view_quotes(quotes):
     for quote in quotes:
         print_quote(quote)
->>>>>>> a5dd0637eea76c80a14b8cbf7572a2f2382d2f35
+
